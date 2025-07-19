@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.cover {
+  width: 100%;
+  height: 220px;
+  background: url("images/COVER.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  background: url("images/LOGO.png") center/cover no-repeat #fcb001;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.content {
+  padding-top: 100px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bio {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #fcb001;
+}
+
+.link-button {
+  display: block;
+  background-color: #e7a70f;
+  color: white;
+  padding: 15px 25px;
+  margin: 12px auto;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  width: 80%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #bd8a15;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 20px;
+  }
+
+  .bio {
+    font-size: 14px;
+  }
+
+  .link-button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
+
+.video-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+}
