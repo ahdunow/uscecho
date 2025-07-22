@@ -134,3 +134,47 @@ footer {
   font-size: 14px;
   color: #888;
 }
+
+.announcements {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: left;
+  background-color: #fff7e6;
+  border-left: 6px solid #fcb001;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.announcements h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #cc8700;
+}
+
+.announcement-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.announcement-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f1e1c0;
+  font-size: 16px;
+  color: #333;
+}
+
+.announcement-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .announcements h2 {
+    font-size: 18px;
+  }
+
+  .announcement-list li {
+    font-size: 14px;
+  }
+}
